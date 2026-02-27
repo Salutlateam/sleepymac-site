@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow:
 
-Sitemap: https://sleepymac.com/sitemap.xml
+Sitemap: https://sleepymac.app/sitemap.xml
