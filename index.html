@@ -152,8 +152,8 @@
 /* ─── RESET ─────────────────────────────────────────── */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;background:#000;color:#fff;overflow-x:hidden;-webkit-font-smoothing:antialiased;cursor:none}
-a,button{cursor:none}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;background:#000;color:#fff;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+@media(hover:hover) and (pointer:fine){body{cursor:none}a,button{cursor:none}}
 img{display:block;max-width:100%}
 
 /* ─── TOKENS ─────────────────────────────────────────── */
@@ -174,8 +174,10 @@ img{display:block;max-width:100%}
   width:10px;height:10px;background:#fff;border-radius:50%;
   top:0;left:0;transform:translate(-50%,-50%);
   transition:width .25s,height .25s,opacity .2s;
-  mix-blend-mode:difference;will-change:transform
+  mix-blend-mode:difference;will-change:transform;
+  display:none
 }
+@media(hover:hover) and (pointer:fine){#cur{display:block}}
 #cur.big{width:52px;height:52px}
 
 /* ─── NOISE ──────────────────────────────────────────── */
@@ -570,6 +572,7 @@ footer{border-top:1px solid var(--border-s);padding:32px var(--pad)}
   .p-grid .p-card:last-child{grid-column:span 1}
   .stats-band{grid-template-columns:1fr 1fr}
   .feat-row-2{grid-template-columns:1fr}
+  .ring-deco{display:none}
   .feat-row-3{grid-template-columns:1fr}
 }
 </style>
@@ -870,7 +873,7 @@ footer{border-top:1px solid var(--border-s);padding:32px var(--pad)}
       </div>
       <div class="rev">
         <div class="rev-stars">★★★★★</div>
-        <p class="rev-txt">"Super simple, zéro prise de tête. Paiement unique, pas d'abonnement. Rare en 2026."</p>
+        <p class="rev-txt">"Super simple, zéro prise de tête. On configure en 30 secondes et ça juste marche. Rare en 2026."</p>
         <div class="rev-auth"><div class="rev-av">KA</div><div><div class="rev-name">Kevin A.</div><div class="rev-meta">Étudiant · Bordeaux</div></div></div>
       </div>
       <div class="rev">
