@@ -544,39 +544,6 @@ footer{border-top:1px solid var(--border-s);padding:32px var(--pad)}
 .foot-links a{font-size:12px;color:var(--w30);text-decoration:none;transition:color .15s}
 .foot-links a:hover{color:var(--w80)}
 
-/* ─── DOWNLOAD GUIDE ────────────────────────────────── */
-#dl-guide{
-  position:fixed;inset:0;z-index:9500;background:rgba(0,0,0,.88);
-  backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
-  display:flex;align-items:center;justify-content:center;flex-direction:column;gap:16px;
-  cursor:pointer;opacity:0;animation:dlFade .35s ease forwards
-}
-@keyframes dlFade{to{opacity:1}}
-#dl-guide.out{animation:dlOut .3s ease forwards}
-@keyframes dlOut{to{opacity:0}}
-.dl-box{
-  background:var(--w03);border:1px solid var(--border-s);border-radius:24px;
-  padding:40px 48px;text-align:center;max-width:420px;width:90%;
-  display:flex;flex-direction:column;align-items:center;gap:16px
-}
-.dl-ic{font-size:48px;line-height:1}
-.dl-title{font-size:22px;font-weight:800;letter-spacing:-.5px}
-.dl-steps{font-size:14px;color:var(--w50);line-height:1.8;text-align:left}
-.dl-steps strong{color:var(--w80)}
-.dl-dismiss{font-size:11px;color:var(--w20);letter-spacing:1px;text-transform:uppercase;margin-top:4px}
-.dl-arrow{
-  position:absolute;display:flex;flex-direction:column;align-items:center;gap:8px;
-  pointer-events:none
-}
-.dl-arrow-txt{font-size:11px;font-weight:700;color:var(--blue-xl);letter-spacing:.5px;white-space:nowrap}
-.dl-arrow svg{animation:dlBounce 1.2s ease-in-out infinite}
-@keyframes dlBounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
-.dl-arrow.bl{bottom:28px;left:32px}
-.dl-arrow.tr{top:80px;right:32px}
-.dl-arrow.bl svg{transform-origin:center;animation:dlBounce 1.2s ease-in-out infinite}
-.dl-arrow.tr svg{transform:rotate(180deg);animation:dlBounceTr 1.2s ease-in-out infinite}
-@keyframes dlBounceTr{0%,100%{transform:rotate(180deg) translateY(0)}50%{transform:rotate(180deg) translateY(-10px)}}
-
 /* ─── RESPONSIVE ─────────────────────────────────────── */
 @media(max-width:1100px){
   .card-primary{grid-template-columns:1fr}
@@ -1179,44 +1146,6 @@ document.querySelectorAll('.faq-item').forEach(item => {
     const isOpen = item.classList.contains('open');
     document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
     if (!isOpen) item.classList.add('open');
-  });
-});
-
-/* ── DOWNLOAD GUIDE ────────────────────────────── */
-document.querySelectorAll('a[download]').forEach(link => {
-  link.addEventListener('click', () => {
-    setTimeout(() => {
-      if (document.getElementById('dl-guide')) return;
-      const ua = navigator.userAgent;
-      let pos = 'bl', label = 'Ton fichier apparaît ici ↓';
-      if (ua.includes('Safari') && !ua.includes('Chrome') && !ua.includes('Chromium')) {
-        pos = 'tr'; label = 'Ton fichier apparaît ici ↑';
-      } else if (ua.includes('Firefox')) {
-        pos = 'tr'; label = 'Ton fichier apparaît ici ↑';
-      }
-      const arrowSvg = '<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#93c5fd" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>';
-      const g = document.createElement('div');
-      g.id = 'dl-guide';
-      g.innerHTML = `
-        <div class="dl-box">
-          <div class="dl-ic">✅</div>
-          <div class="dl-title">Téléchargement lancé !</div>
-          <div class="dl-steps">
-            <strong>1.</strong> Ouvre le fichier <strong>.dmg</strong> téléchargé<br/>
-            <strong>2.</strong> Glisse <strong>SleepyMac</strong> dans le dossier Applications<br/>
-            <strong>3.</strong> Première fois : <strong>clic droit → Ouvrir</strong>
-          </div>
-          <div class="dl-dismiss">Cliquer pour fermer</div>
-        </div>
-        <div class="dl-arrow ${pos}">
-          <span class="dl-arrow-txt">${label}</span>
-          ${arrowSvg}
-        </div>`;
-      document.body.appendChild(g);
-      const dismiss = () => { g.classList.add('out'); setTimeout(() => g.remove(), 300); };
-      g.addEventListener('click', dismiss);
-      setTimeout(dismiss, 12000);
-    }, 600);
   });
 });
 
