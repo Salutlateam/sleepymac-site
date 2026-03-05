@@ -1,74 +1,282 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>Mentions légales — SleepyMac</title>
-<meta name="description" content="Mentions légales du site sleepymac.app."/>
-<meta name="robots" content="index,follow"/>
-<link rel="canonical" href="https://sleepymac.app/mentions-legales"/>
-<link rel="icon" type="image/png" href="/assets/icon.png"/>
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;background:#000;color:rgba(255,255,255,.8);line-height:1.8;padding:0 24px}
-.wrap{max-width:680px;margin:0 auto;padding:80px 0 60px}
-a.back{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:600;color:rgba(255,255,255,.4);text-decoration:none;margin-bottom:40px;transition:color .15s}
-a.back:hover{color:#fff}
-h1{font-size:36px;font-weight:900;letter-spacing:-1.5px;color:#fff;margin-bottom:8px}
-.date{font-size:13px;color:rgba(255,255,255,.3);margin-bottom:48px}
-h2{font-size:20px;font-weight:700;color:#fff;margin:40px 0 12px;letter-spacing:-.3px}
-p,li{font-size:15px;color:rgba(255,255,255,.6);margin-bottom:12px}
-ul{padding-left:20px}
-li{margin-bottom:8px}
-strong{color:rgba(255,255,255,.8)}
-.footer{border-top:1px solid rgba(255,255,255,.06);margin-top:60px;padding-top:24px;font-size:12px;color:rgba(255,255,255,.3)}
-.placeholder{background:rgba(255,200,0,.1);border:1px dashed rgba(255,200,0,.3);padding:2px 8px;border-radius:4px;color:rgba(255,200,0,.8);font-size:13px}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Mentions légales — SleepyMac</title>
+  <meta name="description" content="Mentions légales du site sleepymac.app." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://sleepymac.app/mentions-legales" />
+  <link rel="icon" type="image/png" href="/assets/icon.png" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #000;
+      color: rgba(255, 255, 255, .8);
+      line-height: 1.8;
+      padding: 0 24px
+    }
+
+    .wrap {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 80px 0 60px
+    }
+
+    a.back {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 13px;
+      font-weight: 600;
+      color: rgba(255, 255, 255, .4);
+      text-decoration: none;
+      margin-bottom: 40px;
+      transition: color .15s
+    }
+
+    a.back:hover {
+      color: #fff
+    }
+
+    h1 {
+      font-size: 36px;
+      font-weight: 900;
+      letter-spacing: -1.5px;
+      color: #fff;
+      margin-bottom: 8px
+    }
+
+    .date {
+      font-size: 13px;
+      color: rgba(255, 255, 255, .3);
+      margin-bottom: 48px
+    }
+
+    h2 {
+      font-size: 20px;
+      font-weight: 700;
+      color: #fff;
+      margin: 40px 0 12px;
+      letter-spacing: -.3px
+    }
+
+    p,
+    li {
+      font-size: 15px;
+      color: rgba(255, 255, 255, .6);
+      margin-bottom: 12px
+    }
+
+    ul {
+      padding-left: 20px
+    }
+
+    li {
+      margin-bottom: 8px
+    }
+
+    strong {
+      color: rgba(255, 255, 255, .8)
+    }
+
+    .footer {
+      border-top: 1px solid rgba(255, 255, 255, .06);
+      margin-top: 60px;
+      padding-top: 24px;
+      font-size: 12px;
+      color: rgba(255, 255, 255, .3)
+    }
+
+    .placeholder {
+      background: rgba(255, 200, 0, .1);
+      border: 1px dashed rgba(255, 200, 0, .3);
+      padding: 2px 8px;
+      border-radius: 4px;
+      color: rgba(255, 200, 0, .8);
+      font-size: 13px
+    }
+  </style>
+  <!-- Google Analytics — chargé uniquement après consentement cookies (RGPD) -->
+  <script>
+    function loadGA() {
+      if (document.getElementById('ga-script')) return;
+      var s = document.createElement('script');
+      s.id = 'ga-script'; s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-71E9EK2WCF';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-71E9EK2WCF', { anonymize_ip: true });
+    }
+    (function () {
+      if (localStorage.getItem('cookie_consent') === 'accepted') { loadGA(); }
+    })();
+  </script>
+  <style>
+    #cookie-banner {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 9998;
+      background: rgba(10, 10, 14, .96);
+      border-top: 1px solid rgba(255, 255, 255, .08);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      padding: 18px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      transform: translateY(100%);
+      animation: cookie-slide-up .5s ease .5s forwards
+    }
+
+    @keyframes cookie-slide-up {
+      to {
+        transform: translateY(0)
+      }
+    }
+
+    #cookie-banner.hidden {
+      display: none
+    }
+
+    #cookie-banner p {
+      font-size: 13px;
+      color: rgba(255, 255, 255, .5);
+      margin: 0;
+      max-width: 600px;
+      line-height: 1.5
+    }
+
+    #cookie-banner a {
+      color: #93c5fd;
+      text-decoration: underline
+    }
+
+    .cookie-btns {
+      display: flex;
+      gap: 8px;
+      flex-shrink: 0
+    }
+
+    .cookie-btn {
+      font-family: inherit;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 9px 20px;
+      border-radius: 99px;
+      border: none;
+      cursor: pointer;
+      transition: opacity .2s, transform .15s
+    }
+
+    .cookie-btn:hover {
+      opacity: .85;
+      transform: translateY(-1px)
+    }
+
+    .cookie-accept {
+      background: #fff;
+      color: #000
+    }
+
+    .cookie-reject {
+      background: rgba(255, 255, 255, .08);
+      color: rgba(255, 255, 255, .5);
+      border: 1px solid rgba(255, 255, 255, .1)
+    }
+  </style>
 </head>
+
 <body>
-<div class="wrap">
-  <a href="/" class="back">← Retour à l'accueil</a>
-  <h1>Mentions légales</h1>
-  <p class="date">Dernière mise à jour : 28 février 2026</p>
+  <div class="wrap">
+    <a href="/" class="back">← Retour à l'accueil</a>
+    <h1>Mentions légales</h1>
+    <p class="date">Dernière mise à jour : 28 février 2026</p>
 
-  <h2>1. Éditeur du site</h2>
-  <p>
-    <strong>Alexandre Tapiero</strong><br/>
-    Développeur indépendant<br/>
-    <span class="placeholder">À COMPLÉTER — Adresse postale complète</span><br/>
-    France
-  </p>
-  <p>
-    Téléphone : <span class="placeholder">À COMPLÉTER</span><br/>
-    Email : <a href="mailto:contact@sleepymac.app" style="color:#93c5fd">contact@sleepymac.app</a>
-  </p>
-  <p>
-    SIRET : <span class="placeholder">À COMPLÉTER</span><br/>
-    TVA intracommunautaire : <span class="placeholder">À COMPLÉTER ou « Non applicable » si franchise en base de TVA</span>
-  </p>
+    <h2>1. Éditeur du site</h2>
+    <p>
+      <strong>Alexandre Tapiero</strong><br />
+      Développeur indépendant<br />
+      <span class="placeholder">À COMPLÉTER — Adresse postale complète</span><br />
+      France
+    </p>
+    <p>
+      Téléphone : <span class="placeholder">À COMPLÉTER</span><br />
+      Email : <a href="mailto:contact@sleepymac.app" style="color:#93c5fd">contact@sleepymac.app</a>
+    </p>
+    <p>
+      SIRET : <span class="placeholder">À COMPLÉTER</span><br />
+      TVA intracommunautaire : <span class="placeholder">À COMPLÉTER ou « Non applicable » si franchise en base de
+        TVA</span>
+    </p>
 
-  <h2>2. Directeur de la publication</h2>
-  <p><strong>Alexandre Tapiero</strong></p>
+    <h2>2. Directeur de la publication</h2>
+    <p><strong>Alexandre Tapiero</strong></p>
 
-  <h2>3. Hébergement</h2>
-  <p><strong>Vercel Inc.</strong><br/>340 S Lemon Ave #4133<br/>Walnut, CA 91789, États-Unis<br/>Site : <a href="https://vercel.com" style="color:#93c5fd" rel="noopener" target="_blank">vercel.com</a></p>
+    <h2>3. Hébergement</h2>
+    <p><strong>Vercel Inc.</strong><br />340 S Lemon Ave #4133<br />Walnut, CA 91789, États-Unis<br />Site : <a
+        href="https://vercel.com" style="color:#93c5fd" rel="noopener" target="_blank">vercel.com</a></p>
 
-  <h2>4. Propriété intellectuelle</h2>
-  <p>L'ensemble du contenu du site sleepymac.app (textes, images, graphismes, logo, icônes) est la propriété exclusive d'Alexandre Tapiero, sauf mention contraire. Toute reproduction, représentation ou diffusion, en tout ou partie, du contenu de ce site est interdite sans autorisation écrite préalable.</p>
+    <h2>4. Propriété intellectuelle</h2>
+    <p>L'ensemble du contenu du site sleepymac.app (textes, images, graphismes, logo, icônes) est la propriété exclusive
+      d'Alexandre Tapiero, sauf mention contraire. Toute reproduction, représentation ou diffusion, en tout ou partie,
+      du contenu de ce site est interdite sans autorisation écrite préalable.</p>
 
-  <h2>5. Responsabilité</h2>
-  <p>L'éditeur s'efforce de fournir des informations aussi précises que possible. Toutefois, il ne saurait être tenu responsable des omissions, des inexactitudes ou des carences dans la mise à jour.</p>
+    <h2>5. Responsabilité</h2>
+    <p>L'éditeur s'efforce de fournir des informations aussi précises que possible. Toutefois, il ne saurait être tenu
+      responsable des omissions, des inexactitudes ou des carences dans la mise à jour.</p>
 
-  <h2>6. Traitement des paiements</h2>
-  <p>Les transactions financières sont gérées par <strong>Lemon Squeezy LLC</strong>, marchand officiel (Merchant of Record). Lemon Squeezy est responsable du traitement des paiements, de la facturation et de la conformité fiscale (TVA).</p>
+    <h2>6. Traitement des paiements</h2>
+    <p>Les transactions financières sont gérées par <strong>Lemon Squeezy LLC</strong>, marchand officiel (Merchant of
+      Record). Lemon Squeezy est responsable du traitement des paiements, de la facturation et de la conformité fiscale
+      (TVA).</p>
 
-  <h2>7. Conditions générales de vente</h2>
-  <p>Les conditions générales de vente applicables aux achats de SleepyMac sont consultables sur la page dédiée : <a href="/cgv" style="color:#93c5fd">Conditions générales de vente</a>.</p>
+    <h2>7. Conditions générales de vente</h2>
+    <p>Les conditions générales de vente applicables aux achats de SleepyMac sont consultables sur la page dédiée : <a
+        href="/cgv" style="color:#93c5fd">Conditions générales de vente</a>.</p>
 
-  <h2>8. Droit applicable</h2>
-  <p>Le présent site et ses mentions légales sont régis par le droit français. En cas de litige, les tribunaux français seront seuls compétents.</p>
+    <h2>8. Droit applicable</h2>
+    <p>Le présent site et ses mentions légales sont régis par le droit français. En cas de litige, les tribunaux
+      français seront seuls compétents.</p>
 
-  <div class="footer">© 2026 SleepyMac — Alexandre Tapiero. Tous droits réservés.</div>
-</div>
+    <div class="footer">© 2026 SleepyMac — Alexandre Tapiero. Tous droits réservés.</div>
+  </div>
+
+  <!-- ═══ COOKIE CONSENT ═════════════════════════════════ -->
+  <div id="cookie-banner">
+    <p>Ce site utilise Google Analytics pour mesurer l'audience. <a href="/confidentialite">En savoir plus</a></p>
+    <div class="cookie-btns">
+      <button class="cookie-btn cookie-reject" id="cookie-reject">Refuser</button>
+      <button class="cookie-btn cookie-accept" id="cookie-accept">Accepter</button>
+    </div>
+  </div>
+  <script>
+    (function () {
+      var b = document.getElementById('cookie-banner');
+      if (localStorage.getItem('cookie_consent')) { b.classList.add('hidden'); return; }
+      document.getElementById('cookie-accept').addEventListener('click', function () {
+        localStorage.setItem('cookie_consent', 'accepted');
+        b.classList.add('hidden'); loadGA();
+      });
+      document.getElementById('cookie-reject').addEventListener('click', function () {
+        localStorage.setItem('cookie_consent', 'rejected');
+        b.classList.add('hidden');
+      });
+    })();
+  </script>
 </body>
+
 </html>

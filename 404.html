@@ -1,28 +1,204 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>Page introuvable — SleepyMac</title>
-<meta name="robots" content="noindex"/>
-<link rel="icon" type="image/png" href="/assets/icon.png"/>
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;background:#000;color:#fff;min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:24px}
-.wrap{max-width:440px}
-.code{font-size:120px;font-weight:900;letter-spacing:-6px;line-height:1;background:linear-gradient(135deg,#2563eb,#93c5fd);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:16px}
-h1{font-size:24px;font-weight:700;margin-bottom:12px}
-p{font-size:15px;color:rgba(255,255,255,.5);line-height:1.6;margin-bottom:32px}
-a{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:700;background:#fff;color:#000;padding:14px 28px;border-radius:99px;text-decoration:none;transition:opacity .2s}
-a:hover{opacity:.85}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Page introuvable — SleepyMac</title>
+  <meta name="robots" content="noindex" />
+  <link rel="icon" type="image/png" href="/assets/icon.png" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #000;
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 24px
+    }
+
+    .wrap {
+      max-width: 440px
+    }
+
+    .code {
+      font-size: 120px;
+      font-weight: 900;
+      letter-spacing: -6px;
+      line-height: 1;
+      background: linear-gradient(135deg, #2563eb, #93c5fd);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 16px
+    }
+
+    h1 {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 12px
+    }
+
+    p {
+      font-size: 15px;
+      color: rgba(255, 255, 255, .5);
+      line-height: 1.6;
+      margin-bottom: 32px
+    }
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+      font-weight: 700;
+      background: #fff;
+      color: #000;
+      padding: 14px 28px;
+      border-radius: 99px;
+      text-decoration: none;
+      transition: opacity .2s
+    }
+
+    a:hover {
+      opacity: .85
+    }
+  </style>
+  <!-- Google Analytics — chargé uniquement après consentement cookies (RGPD) -->
+  <script>
+    function loadGA() {
+      if (document.getElementById('ga-script')) return;
+      var s = document.createElement('script');
+      s.id = 'ga-script'; s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-71E9EK2WCF';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-71E9EK2WCF', { anonymize_ip: true });
+    }
+    (function () {
+      if (localStorage.getItem('cookie_consent') === 'accepted') { loadGA(); }
+    })();
+  </script>
+  <style>
+    #cookie-banner {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 9998;
+      background: rgba(10, 10, 14, .96);
+      border-top: 1px solid rgba(255, 255, 255, .08);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      padding: 18px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      transform: translateY(100%);
+      animation: cookie-slide-up .5s ease .5s forwards
+    }
+
+    @keyframes cookie-slide-up {
+      to {
+        transform: translateY(0)
+      }
+    }
+
+    #cookie-banner.hidden {
+      display: none
+    }
+
+    #cookie-banner p {
+      font-size: 13px;
+      color: rgba(255, 255, 255, .5);
+      margin: 0;
+      max-width: 600px;
+      line-height: 1.5
+    }
+
+    #cookie-banner a {
+      color: #93c5fd;
+      text-decoration: underline
+    }
+
+    .cookie-btns {
+      display: flex;
+      gap: 8px;
+      flex-shrink: 0
+    }
+
+    .cookie-btn {
+      font-family: inherit;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 9px 20px;
+      border-radius: 99px;
+      border: none;
+      cursor: pointer;
+      transition: opacity .2s, transform .15s
+    }
+
+    .cookie-btn:hover {
+      opacity: .85;
+      transform: translateY(-1px)
+    }
+
+    .cookie-accept {
+      background: #fff;
+      color: #000
+    }
+
+    .cookie-reject {
+      background: rgba(255, 255, 255, .08);
+      color: rgba(255, 255, 255, .5);
+      border: 1px solid rgba(255, 255, 255, .1)
+    }
+  </style>
 </head>
+
 <body>
-<div class="wrap">
-  <div class="code">404</div>
-  <h1>Page introuvable</h1>
-  <p>La page que tu cherches n'existe pas ou a été déplacée.</p>
-  <a href="/">← Retour à l'accueil</a>
-</div>
+  <div class="wrap">
+    <div class="code">404</div>
+    <h1>Page introuvable</h1>
+    <p>La page que tu cherches n'existe pas ou a été déplacée.</p>
+    <a href="/">← Retour à l'accueil</a>
+  </div>
+
+  <!-- ═══ COOKIE CONSENT ═════════════════════════════════ -->
+  <div id="cookie-banner">
+    <p>Ce site utilise Google Analytics pour mesurer l'audience. <a href="/confidentialite">En savoir plus</a></p>
+    <div class="cookie-btns">
+      <button class="cookie-btn cookie-reject" id="cookie-reject">Refuser</button>
+      <button class="cookie-btn cookie-accept" id="cookie-accept">Accepter</button>
+    </div>
+  </div>
+  <script>
+    (function () {
+      var b = document.getElementById('cookie-banner');
+      if (localStorage.getItem('cookie_consent')) { b.classList.add('hidden'); return; }
+      document.getElementById('cookie-accept').addEventListener('click', function () {
+        localStorage.setItem('cookie_consent', 'accepted');
+        b.classList.add('hidden'); loadGA();
+      });
+      document.getElementById('cookie-reject').addEventListener('click', function () {
+        localStorage.setItem('cookie_consent', 'rejected');
+        b.classList.add('hidden');
+      });
+    })();
+  </script>
 </body>
+
 </html>
