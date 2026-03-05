@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Conditions g&eacute;n&eacute;rales d'utilisation &mdash; SleepyMac</title>
+    <meta name="description"
+        content="Conditions g&eacute;n&eacute;rales d'utilisation du site sleepymac.app et du logiciel SleepyMac." />
+    <meta name="robots" content="index,follow" />
+    <link rel="canonical" href="https://sleepymac.app/cgu" />
+    <link rel="icon" type="image/png" href="/assets/icon.png" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #000;
+            color: rgba(255, 255, 255, .8);
+            line-height: 1.8;
+            padding: 0 24px
+        }
+
+        .wrap {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 80px 0 60px
+        }
+
+        a.back {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 13px;
+            font-weight: 600;
+            color: rgba(255, 255, 255, .4);
+            text-decoration: none;
+            margin-bottom: 40px;
+            transition: color .15s
+        }
+
+        a.back:hover {
+            color: #fff
+        }
+
+        h1 {
+            font-size: 36px;
+            font-weight: 900;
+            letter-spacing: -1.5px;
+            color: #fff;
+            margin-bottom: 8px
+        }
+
+        .date {
+            font-size: 13px;
+            color: rgba(255, 255, 255, .3);
+            margin-bottom: 48px
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: 700;
+            color: #fff;
+            margin: 40px 0 12px;
+            letter-spacing: -.3px
+        }
+
+        p,
+        li {
+            font-size: 15px;
+            color: rgba(255, 255, 255, .6);
+            margin-bottom: 12px
+        }
+
+        ul {
+            padding-left: 20px
+        }
+
+        li {
+            margin-bottom: 8px
+        }
+
+        strong {
+            color: rgba(255, 255, 255, .8)
+        }
+
+        .footer {
+            border-top: 1px solid rgba(255, 255, 255, .06);
+            margin-top: 60px;
+            padding-top: 24px;
+            font-size: 12px;
+            color: rgba(255, 255, 255, .3)
+        }
+
+        /* ─── COOKIE BANNER ─────────────────────────────────── */
+        #cookie-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 9998;
+            background: rgba(10, 10, 14, .96);
+            border-top: 1px solid rgba(255, 255, 255, .08);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+            padding: 18px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+            transform: translateY(100%);
+            animation: cookie-slide-up .5s ease .5s forwards
+        }
+
+        @keyframes cookie-slide-up {
+            to {
+                transform: translateY(0)
+            }
+        }
+
+        #cookie-banner.hidden {
+            display: none
+        }
+
+        #cookie-banner p {
+            font-size: 13px;
+            color: rgba(255, 255, 255, .5);
+            margin: 0;
+            max-width: 600px;
+            line-height: 1.5
+        }
+
+        #cookie-banner a {
+            color: #93c5fd;
+            text-decoration: underline
+        }
+
+        .cookie-btns {
+            display: flex;
+            gap: 8px;
+            flex-shrink: 0
+        }
+
+        .cookie-btn {
+            font-family: inherit;
+            font-size: 12px;
+            font-weight: 700;
+            padding: 9px 20px;
+            border-radius: 99px;
+            border: none;
+            cursor: pointer;
+            transition: opacity .2s, transform .15s
+        }
+
+        .cookie-btn:hover {
+            opacity: .85;
+            transform: translateY(-1px)
+        }
+
+        .cookie-accept {
+            background: #fff;
+            color: #000
+        }
+
+        .cookie-reject {
+            background: rgba(255, 255, 255, .08);
+            color: rgba(255, 255, 255, .5);
+            border: 1px solid rgba(255, 255, 255, .1)
+        }
+    </style>
+    <!-- Google Analytics — charg&eacute; uniquement apr&egrave;s consentement cookies (RGPD) -->
+    <script>
+        function loadGA() {
+            if (document.getElementById('ga-script')) return;
+            var s = document.createElement('script');
+            s.id = 'ga-script'; s.async = true;
+            s.src = 'https://www.googletagmanager.com/gtag/js?id=G-71E9EK2WCF';
+            document.head.appendChild(s);
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+            gtag('config', 'G-71E9EK2WCF', { anonymize_ip: true });
+        }
+        (function () {
+            if (localStorage.getItem('cookie_consent') === 'accepted') { loadGA(); }
+        })();
+    </script>
+</head>
+
+<body>
+    <div class="wrap">
+        <a href="/" class="back">&larr; Retour &agrave; l'accueil</a>
+        <h1>Conditions g&eacute;n&eacute;rales d'utilisation</h1>
+        <p class="date">Derni&egrave;re mise &agrave; jour : 6 mars 2026</p>
+
+        <h2>1. Objet</h2>
+        <p>Les pr&eacute;sentes conditions g&eacute;n&eacute;rales d'utilisation (CGU) d&eacute;finissent les
+            r&egrave;gles
+            d'acc&egrave;s et d'utilisation du site web <strong>sleepymac.app</strong> ainsi que du logiciel
+            <strong>SleepyMac</strong>, &eacute;dit&eacute;s par Alexandre Tapiero, d&eacute;veloppeur
+            ind&eacute;pendant.
+        </p>
+        <p>L'utilisation du site et/ou du logiciel implique l'acceptation pleine et enti&egrave;re des pr&eacute;sentes
+            CGU.
+            Si vous n'acceptez pas ces conditions, veuillez ne pas utiliser le site ni le logiciel.</p>
+
+        <h2>2. Acc&egrave;s au site</h2>
+        <p>Le site sleepymac.app est accessible gratuitement &agrave; tout utilisateur disposant d'un acc&egrave;s
+            &agrave;
+            Internet. L'&eacute;diteur s'efforce de maintenir l'accessibilit&eacute; du site 24h/24 et 7j/7, mais ne
+            saurait
+            &ecirc;tre tenu responsable en cas d'interruption, pour quelque cause que ce soit (maintenance,
+            h&eacute;bergeur,
+            force majeure).</p>
+
+        <h2>3. Description du logiciel</h2>
+        <p>SleepyMac est une application native macOS permettant de programmer la mise en veille automatique d'un Mac.
+            Le
+            logiciel propose notamment :</p>
+        <ul>
+            <li>Un timer de veille param&eacute;trable (5 minutes &agrave; 3 heures)</li>
+            <li>Un fondu audio progressif</li>
+            <li>Le contr&ocirc;le de la LED MagSafe</li>
+            <li>L'assombrissement progressif de l'&eacute;cran</li>
+            <li>Une planification quotidienne automatique</li>
+        </ul>
+        <p>Les fonctionnalit&eacute;s disponibles peuvent &eacute;voluer au fil des mises &agrave; jour.</p>
+
+        <h2>4. Licence d'utilisation</h2>
+        <p>L'achat d'une licence SleepyMac (mensuelle, annuelle ou &agrave; vie) conf&egrave;re &agrave; l'utilisateur
+            un
+            droit d'utilisation <strong>personnel, non exclusif et non transf&eacute;rable</strong> du logiciel.</p>
+        <p>Ce droit d'utilisation est soumis au respect des pr&eacute;sentes CGU et des <a href="/cgv"
+                style="color:#93c5fd">Conditions G&eacute;n&eacute;rales de Vente</a>.</p>
+        <p>Toute utilisation non autoris&eacute;e du logiciel, notamment la copie, la modification, la
+            d&eacute;compilation,
+            le d&eacute;sassemblage ou la redistribution, est strictement interdite.</p>
+
+        <h2>5. Propri&eacute;t&eacute; intellectuelle</h2>
+        <p>L'ensemble du contenu du site sleepymac.app et du logiciel SleepyMac (textes, images, graphismes, logo,
+            ic&ocirc;nes, code source, interface utilisateur, documentation) est prot&eacute;g&eacute; par les lois
+            fran&ccedil;aises et internationales relatives &agrave; la propri&eacute;t&eacute; intellectuelle.</p>
+        <p>Ces &eacute;l&eacute;ments sont la propri&eacute;t&eacute; exclusive d'<strong>Alexandre Tapiero</strong>,
+            sauf
+            mention contraire. Toute reproduction, repr&eacute;sentation, modification ou diffusion, en tout ou partie,
+            est
+            interdite sans autorisation &eacute;crite pr&eacute;alable.</p>
+
+        <h2>6. Comportement de l'utilisateur</h2>
+        <p>L'utilisateur s'engage &agrave; :</p>
+        <ul>
+            <li>Utiliser le site et le logiciel conform&eacute;ment &agrave; leur destination</li>
+            <li>Ne pas tenter de contourner les mesures de protection du logiciel (licence, DRM)</li>
+            <li>Ne pas utiliser le logiciel &agrave; des fins illicites</li>
+            <li>Ne pas tenter d'acc&eacute;der de mani&egrave;re non autoris&eacute;e aux serveurs ou syst&egrave;mes de
+                l'&eacute;diteur</li>
+        </ul>
+        <p>En cas de violation de ces obligations, l'&eacute;diteur se r&eacute;serve le droit de suspendre ou de
+            r&eacute;voquer la licence de l'utilisateur, sans pr&eacute;avis ni indemnit&eacute;.</p>
+
+        <h2>7. Limitation de responsabilit&eacute;</h2>
+        <p>L'&eacute;diteur met tout en &oelig;uvre pour fournir un logiciel fiable et un site web accessible. Toutefois
+            :</p>
+        <ul>
+            <li>Le logiciel est fourni &laquo; en l'&eacute;tat &raquo;, sans garantie de fonctionnement ininterrompu ou
+                exempt
+                d'erreurs</li>
+            <li>L'&eacute;diteur ne saurait &ecirc;tre tenu responsable des dommages directs ou indirects
+                r&eacute;sultant de
+                l'utilisation ou de l'impossibilit&eacute; d'utiliser le logiciel</li>
+            <li>La responsabilit&eacute; de l'&eacute;diteur est limit&eacute;e au montant effectivement pay&eacute; par
+                l'utilisateur pour sa licence</li>
+        </ul>
+        <p>Ces limitations ne portent pas atteinte aux droits du consommateur tels que d&eacute;finis par le Code de la
+            consommation, notamment la <a href="/cgv" style="color:#93c5fd">garantie l&eacute;gale de
+                conformit&eacute;</a>.</p>
+
+        <h2>8. Liens hypertextes</h2>
+        <p>Le site sleepymac.app peut contenir des liens vers des sites tiers (Lemon Squeezy, Google, Vercel).
+            L'&eacute;diteur n'exerce aucun contr&ocirc;le sur ces sites et d&eacute;cline toute responsabilit&eacute;
+            quant
+            &agrave; leur contenu, leur politique de confidentialit&eacute; ou leurs pratiques.</p>
+
+        <h2>9. Donn&eacute;es personnelles</h2>
+        <p>Le traitement des donn&eacute;es personnelles est d&eacute;crit dans notre <a href="/confidentialite"
+                style="color:#93c5fd">politique de confidentialit&eacute;</a>, qui fait partie int&eacute;grante des
+            pr&eacute;sentes CGU.</p>
+
+        <h2>10. Modification des CGU</h2>
+        <p>L'&eacute;diteur se r&eacute;serve le droit de modifier les pr&eacute;sentes CGU &agrave; tout moment. Les
+            modifications entrent en vigueur d&egrave;s leur publication sur le site. La date de derni&egrave;re mise
+            &agrave;
+            jour est indiqu&eacute;e en haut de cette page.</p>
+        <p>L'utilisation du site ou du logiciel apr&egrave;s la publication des CGU modifi&eacute;es vaut acceptation de
+            celles-ci.</p>
+
+        <h2>11. Droit applicable et juridiction</h2>
+        <p>Les pr&eacute;sentes CGU sont r&eacute;gies par le <strong>droit fran&ccedil;ais</strong>.</p>
+        <p>En cas de litige relatif &agrave; l'interpr&eacute;tation ou &agrave; l'ex&eacute;cution des
+            pr&eacute;sentes, et
+            &agrave; d&eacute;faut de r&eacute;solution amiable, les tribunaux fran&ccedil;ais seront seuls
+            comp&eacute;tents, sans pr&eacute;judice du droit du consommateur de saisir le tribunal de son lieu de
+            domicile.</p>
+        <p>Conform&eacute;ment aux articles <strong>L611-1 et suivants</strong> du Code de la consommation, vous pouvez
+            &eacute;galement recourir &agrave; un m&eacute;diateur de la consommation. Consultez nos <a href="/cgv"
+                style="color:#93c5fd">CGV</a> pour les coordonn&eacute;es du m&eacute;diateur.</p>
+
+        <div class="footer">
+            <p>&copy; 2026 SleepyMac &mdash; Alexandre Tapiero. Tous droits r&eacute;serv&eacute;s.</p>
+            <p style="margin-top:8px">
+                <a href="/confidentialite"
+                    style="color:rgba(255,255,255,.4);text-decoration:none;margin-right:16px">Confidentialit&eacute;</a>
+                <a href="/mentions-legales"
+                    style="color:rgba(255,255,255,.4);text-decoration:none;margin-right:16px">Mentions
+                    l&eacute;gales</a>
+                <a href="/cgv" style="color:rgba(255,255,255,.4);text-decoration:none">CGV</a>
+            </p>
+        </div>
+    </div>
+
+    <!-- ═══ COOKIE CONSENT (CNIL 2020-091 compliant) ═══════ -->
+    <div id="cookie-banner">
+        <p>Ce site utilise Google Analytics pour mesurer l'audience. Vos donn&eacute;es sont anonymis&eacute;es. <a
+                href="/confidentialite">En savoir plus</a></p>
+        <div class="cookie-btns">
+            <button class="cookie-btn cookie-reject" id="cookie-reject">Refuser</button>
+            <button class="cookie-btn cookie-accept" id="cookie-accept">Accepter</button>
+        </div>
+    </div>
+    <button id="cookie-manage" aria-label="G&eacute;rer les cookies" title="G&eacute;rer les cookies" style="
+    position:fixed;bottom:16px;left:16px;z-index:9997;
+    width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,255,255,.1);
+    background:rgba(10,10,14,.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+    color:rgba(255,255,255,.5);font-size:20px;cursor:pointer;
+    display:none;align-items:center;justify-content:center;
+    transition:opacity .2s,transform .15s;box-shadow:0 4px 16px rgba(0,0,0,.4)
+  ">&#127850;</button>
+    <script>
+        (function () {
+            var b = document.getElementById('cookie-banner');
+            var m = document.getElementById('cookie-manage');
+            function showManageBtn() { m.style.display = 'flex'; }
+            function hideManageBtn() { m.style.display = 'none'; }
+            function clearGACookies() {
+                document.cookie.split(';').forEach(function (c) {
+                    var name = c.split('=')[0].trim();
+                    if (name.indexOf('_ga') === 0) {
+                        document.cookie = name + '=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/;domain=.' + location.hostname;
+                        document.cookie = name + '=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/';
+                    }
+                });
+            }
+            function handleAccept() {
+                localStorage.setItem('cookie_consent', 'accepted');
+                b.classList.add('hidden'); showManageBtn(); loadGA();
+            }
+            function handleReject() {
+                localStorage.setItem('cookie_consent', 'rejected');
+                b.classList.add('hidden'); showManageBtn(); clearGACookies();
+                var gs = document.getElementById('ga-script'); if (gs) gs.remove();
+            }
+            if (localStorage.getItem('cookie_consent')) { b.classList.add('hidden'); showManageBtn(); }
+            document.getElementById('cookie-accept').addEventListener('click', handleAccept);
+            document.getElementById('cookie-reject').addEventListener('click', handleReject);
+            m.addEventListener('click', function () {
+                localStorage.removeItem('cookie_consent');
+                b.classList.remove('hidden'); b.style.transform = 'translateY(0)'; b.style.animation = 'none';
+                hideManageBtn();
+            });
+        })();
+    </script>
+</body>
+
+</html>
