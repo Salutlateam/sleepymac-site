@@ -61,7 +61,7 @@
       "priceCurrency": "EUR",
       "priceValidUntil": "2027-12-31",
       "availability": "https://schema.org/InStock",
-      "url": "https://sleepymac.lemonsqueezy.com/checkout/buy/1340860"
+      "url": "https://sleepymac.lemonsqueezy.com/checkout/buy/1399937"
     },
     {
       "@type": "Offer",
@@ -70,7 +70,7 @@
       "priceCurrency": "EUR",
       "priceValidUntil": "2027-12-31",
       "availability": "https://schema.org/InStock",
-      "url": "https://sleepymac.lemonsqueezy.com/checkout/buy/1340865"
+      "url": "https://sleepymac.lemonsqueezy.com/checkout/buy/1399963"
     },
     {
       "@type": "Offer",
@@ -79,7 +79,7 @@
       "priceCurrency": "EUR",
       "priceValidUntil": "2027-12-31",
       "availability": "https://schema.org/InStock",
-      "url": "https://sleepymac.lemonsqueezy.com/checkout/buy/1340870"
+      "url": "https://sleepymac.lemonsqueezy.com/checkout/buy/1399965"
     }
   ]
 }</script>
@@ -1504,18 +1504,24 @@
     }
 
     /* ─── PRICING ────────────────────────────────────────── */
+    #pricing {
+      scroll-margin-top: 68px;
+      padding-top: clamp(32px, 4vw, 56px);
+      padding-bottom: clamp(32px, 4vw, 56px)
+    }
+
     .p-grid {
       display: grid;
       grid-template-columns: 1fr 1.12fr 1fr;
       gap: 14px;
-      margin-top: 48px;
+      margin-top: 28px;
       align-items: start
     }
 
     .p-card {
       border: 1px solid var(--border-s);
-      border-radius: 22px;
-      padding: 36px 30px;
+      border-radius: 18px;
+      padding: 24px 24px;
       background: var(--w02);
       transition: border-color .25s
     }
@@ -1554,35 +1560,35 @@
       letter-spacing: 1.5px;
       text-transform: uppercase;
       color: var(--w30);
-      margin-bottom: 16px
+      margin-bottom: 10px
     }
 
     .p-price {
-      font-size: 54px;
+      font-size: 40px;
       font-weight: 900;
-      letter-spacing: -3px;
+      letter-spacing: -2px;
       line-height: 1;
-      margin-bottom: 6px
+      margin-bottom: 4px
     }
 
     .p-cycle {
       font-size: 12px;
       color: var(--w30);
-      margin-bottom: 24px
+      margin-bottom: 14px
     }
 
     .p-sep {
       border: none;
       border-top: 1px solid var(--border-s);
-      margin: 20px 0
+      margin: 12px 0
     }
 
     .p-list {
       list-style: none;
       display: flex;
       flex-direction: column;
-      gap: 10px;
-      margin-bottom: 28px
+      gap: 7px;
+      margin-bottom: 18px
     }
 
     .p-item {
@@ -1591,7 +1597,7 @@
       gap: 9px;
       font-size: 13px;
       color: var(--w50);
-      line-height: 1.4
+      line-height: 1.3
     }
 
     .yes {
@@ -1608,7 +1614,7 @@
 
     .p-btn {
       width: 100%;
-      padding: 14px;
+      padding: 12px;
       border-radius: 12px;
       font-size: 14px;
       font-weight: 700;
@@ -1640,7 +1646,7 @@
       text-align: center;
       font-size: 12px;
       color: var(--w20);
-      margin-top: 22px
+      margin-top: 14px
     }
 
     /* ─── FAQ ────────────────────────────────────────────── */
@@ -2393,9 +2399,9 @@
   <section class="sec" id="pricing" aria-labelledby="price-h">
     <div class="ct">
       <div style="text-align:center">
-        <div class="tag rv" style="justify-content:center">Tarifs</div>
-        <h2 class="h2 rv d1" id="price-h">Simple.<br /><span class="serif">Choisis ton rythme.</span></h2>
-        <p class="rv d2" style="font-size:15px;color:var(--w40);margin-top:16px;margin-bottom:0">Annulable à tout moment
+        <div class="tag rv" style="justify-content:center;margin-bottom:12px">Tarifs</div>
+        <h2 class="h2 rv d1" id="price-h" style="font-size:clamp(32px,4.5vw,52px)">Simple. <span class="serif">Choisis ton rythme.</span></h2>
+        <p class="rv d2" style="font-size:14px;color:var(--w40);margin-top:10px;margin-bottom:0">Annulable à tout moment
           · macOS 13+ · Apple Silicon &amp; Intel</p>
       </div>
       <div class="p-grid rv d2">
@@ -2417,7 +2423,7 @@
             <li class="p-item"><span class="yes">✓</span> Mises à jour incluses</li>
             <li class="p-item"><span class="no">✗</span><span style="color:var(--w20)">Économies annuelles</span></li>
           </ul>
-          <a href="https://sleepymac.lemonsqueezy.com/checkout/buy/1340860" class="p-btn p-btn-dim">S'abonner</a>
+          <a href="https://sleepymac.lemonsqueezy.com/checkout/buy/1399937" class="p-btn p-btn-dim">S'abonner</a>
         </div>
 
         <!-- ANNUEL — RECOMMANDÉ -->
@@ -2438,7 +2444,7 @@
             <li class="p-item"><span class="yes">✓</span> Mises à jour incluses</li>
             <li class="p-item"><span class="yes">✓</span> <strong>Économisez 10,89 € vs mensuel</strong></li>
           </ul>
-          <a href="https://sleepymac.lemonsqueezy.com/checkout/buy/1340865" class="p-btn p-btn-blue">S'abonner — 12,99
+          <a href="https://sleepymac.lemonsqueezy.com/checkout/buy/1399963" class="p-btn p-btn-blue">S'abonner — 12,99
             €/an</a>
         </div>
 
@@ -2458,7 +2464,7 @@
             <li class="p-item"><span class="yes">✓</span> Toutes les mises à jour futures</li>
             <li class="p-item"><span class="yes">✓</span> <strong>Zéro abonnement · à jamais</strong></li>
           </ul>
-          <a href="https://sleepymac.lemonsqueezy.com/checkout/buy/1340870" class="p-btn p-btn-dim">Acheter une fois</a>
+          <a href="https://sleepymac.lemonsqueezy.com/checkout/buy/1399965" class="p-btn p-btn-dim">Acheter une fois</a>
         </div>
 
       </div>
